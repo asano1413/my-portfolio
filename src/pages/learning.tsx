@@ -24,7 +24,6 @@ export default function Learning() {
                          </ul>
                     </section>
 
-                    {/* 現在学習中のこと */}
                     <section className="mb-12">
                          <h2 className="text-2xl font-semibold mb-4 relative">
                               現在学習中のこと
@@ -38,7 +37,6 @@ export default function Learning() {
                          </ul>
                     </section>
 
-                    {/* これから学びたいこと */}
                     <section className="mb-12">
                          <h2 className="text-2xl font-semibold mb-4 relative">
                               これから学びたいこと

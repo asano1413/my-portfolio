@@ -34,13 +34,15 @@ export default function Home() {
 
         <div className="flex flex-col items-center mb-12">
           <Image
-            src="/profile.jpg"
+            src="/似顔絵.jpg"
             alt="プロフィール画像"
             width={160}
             height={160}
             className="rounded-full shadow-lg"
           />
           <h2 className="text-3xl font-bold mt-4">浅野 晃一朗</h2>
+          <p className="text-lg mt-2">Koichiro Asano</p>
+          <p className='mt-6'>contact : mit2471509@stu.o-hara.ac.jp</p>
         </div>
 
         <section className="mb-12">

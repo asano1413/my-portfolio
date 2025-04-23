@@ -11,7 +11,7 @@ export default function AboutMe() {
                     <h1 className="text-4xl font-bold mb-12 text-center">About Me</h1>
                     <div className="flex flex-col items-center mb-12">
                          <Image
-                              src="/profile.jpg"
+                              src="/my_image2.jpg"
                               alt="プロフィール画像"
                               width={160}
                               height={160}
