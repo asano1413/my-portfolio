@@ -28,7 +28,7 @@ export default function MyProject() {
                ],
                github: 'https://github.com/asano1413/gourmeapp',
                demo: '#',
-               image: '/my_image.jpg',
+               image: '/react.png',
                status: 'completed'
           },
           {
@@ -52,7 +52,7 @@ export default function MyProject() {
                ],
                github: 'https://github.com/asano1413/noteapp',
                demo: '#',
-               image: '/my_image2.jpg',
+               image: '/laravel.png',
                status: 'completed'
           },
           {
@@ -76,7 +76,7 @@ export default function MyProject() {
                ],
                github: 'https://github.com/asano1413/aboutme',
                demo: '#',
-               image: '/似顔絵.jpg',
+               image: '/nextjs.png',
                status: 'completed'
           },
           {
@@ -99,7 +99,7 @@ export default function MyProject() {
                ],
                github: 'https://github.com/asano1413/todoapp',
                demo: '#',
-               image: '/my_image3.jpg',
+               image: '/flutter-logo.png',
                status: 'completed'
           }
      ];

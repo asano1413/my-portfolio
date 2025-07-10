@@ -1,12 +1,10 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function Footer() {
      const socialLinks = [
           { icon: FaGithub, href: 'https://github.com/asano1413', label: 'GitHub' },
-          { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
-          { icon: FaTwitter, href: '#', label: 'Twitter' },
           { icon: FaEnvelope, href: 'mailto:mit2471509@stu.o-hara.ac.jp', label: 'Email' },
      ];
 
@@ -29,11 +27,7 @@ export default function Footer() {
                                    Web開発者として、ユーザー体験を重視したアプリケーションの開発に情熱を注いでいます。
                                    新しい技術の習得と実践的なプロジェクトを通じて、常に成長し続けています。
                               </p>
-                              <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-                                   <span>Made with</span>
-                                   <FaHeart className="text-red-500 animate-pulse" />
-                                   <span>in Japan</span>
-                              </div>
+
                          </div>
 
                          {/* Quick Links */}
@@ -134,7 +128,7 @@ export default function Footer() {
                     {/* Copyright */}
                     <div className="border-t border-gray-200 dark:border-gray-700 pt-8 text-center">
                          <p className="text-gray-600 dark:text-gray-400">
-                              © 2024 Koichiro Asano. All rights reserved.
+                              © 2025 Koichiro Asano. All rights reserved.
                          </p>
                          <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">
                               Built with Next.js, TypeScript, and Tailwind CSS

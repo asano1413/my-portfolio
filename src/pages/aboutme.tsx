@@ -22,21 +22,23 @@ export default function AboutMe() {
      const favoriteArtists = [
           'Suchmos',
           'ずっと真夜中でいいのに。',
-          'Official HIGE DANdism',
-          'King Gnu',
-          'YOASOBI'
+          'EGOIST',
+          'indigo la End',
      ];
 
      const skills = [
           { name: 'HTML/CSS', level: 90, category: 'Frontend' },
-          { name: 'JavaScript', level: 85, category: 'Frontend' },
-          { name: 'TypeScript', level: 80, category: 'Frontend' },
-          { name: 'React', level: 85, category: 'Frontend' },
-          { name: 'Next.js', level: 80, category: 'Frontend' },
-          { name: 'Python', level: 75, category: 'Backend' },
-          { name: 'Django', level: 70, category: 'Backend' },
-          { name: 'Java', level: 60, category: 'Backend' },
-          { name: 'MariaDB', level: 70, category: 'Database' },
+          { name: 'JavaScript', level: 65, category: 'Frontend' },
+          { name: 'TypeScript', level: 60, category: 'Frontend' },
+          { name: 'React', level: 45, category: 'Frontend' },
+          { name: 'Next.js', level: 70, category: 'Frontend' },
+          { name: 'Python', level: 80, category: 'Backend' },
+          { name: 'Django', level: 65, category: 'Backend' },
+          { name: 'Java', level: 35, category: 'Backend' },
+          { name: 'MariaDB', level: 50, category: 'Database' },
+          { name: 'Flutter', level: 40, category: 'Frontend' },
+          { name: 'Dart', level: 30, category: 'Frontend' },
+          { name: 'supabase', level: 60, category: 'Database' },
      ];
 
      const career = [

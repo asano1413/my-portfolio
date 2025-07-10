@@ -2,7 +2,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { motion } from 'framer-motion';
 import { FaCheckCircle, FaSpinner, FaLightbulb, FaGraduationCap, FaCode, FaMobile, FaShieldAlt, FaRocket } from 'react-icons/fa';
-import { SiNextdotjs, SiPython, SiMariadb, SiDocker, SiGithubactions, SiCplusplus } from 'react-icons/si';
+import { SiNextdotjs, SiPython, SiDocker, SiGithubactions, SiCplusplus, SiFlutter } from 'react-icons/si';
 
 export default function Learning() {
      const learnedSkills = [
@@ -10,8 +10,8 @@ export default function Learning() {
           { name: 'JavaScript / TypeScript', icon: FaCode, description: 'フロントエンド開発の基盤', level: '上級' },
           { name: 'React / Next.js', icon: SiNextdotjs, description: 'モダンなフロントエンドフレームワーク', level: '中級' },
           { name: 'Python / Django', icon: SiPython, description: 'バックエンド開発とWebフレームワーク', level: '中級' },
-          { name: 'Java', icon: FaCode, description: 'オブジェクト指向プログラミング', level: '初級' },
-          { name: 'MariaDB', icon: SiMariadb, description: 'リレーショナルデータベース', level: '中級' },
+          { name: 'Laravel', icon: FaCode, description: 'バックエンド中心のプログラミング', level: '中級' },
+          { name: 'Flutter', icon: SiFlutter, description: 'マルチプラットフォームアプリの開発', level: '初級' },
      ];
 
      const currentLearning = [
@@ -20,28 +20,28 @@ export default function Learning() {
                icon: FaShieldAlt,
                description: 'セキュアなユーザー認証の実装',
                progress: 70,
-               status: '学習中'
+               status: '実装完了、アップデート後の容易に実装できるようになったものも触れるのが楽しみ'
           },
           {
-               name: 'Google Maps API',
+               name: 'Flutter',
                icon: FaMobile,
-               description: '位置情報サービスとマップ機能',
-               progress: 50,
+               description: 'マルチプラットフォームアプリの開発',
+               progress: 65,
+               status: '学習・アプリ作成中'
+          },
+          {
+               name: 'FastAPI',
+               icon: FaCode,
+               description: 'AIを用いたAPIの作成',
+               progress: 45,
                status: '学習中'
           },
           {
-               name: 'Laravel 通知機能',
+               name: 'LangChainを用いた開発',
                icon: FaCode,
-               description: 'リアルタイム通知システムの実装',
-               progress: 60,
-               status: '学習中'
-          },
-          {
-               name: 'JSP / Tomcat',
-               icon: FaCode,
-               description: 'サーバーサイドJava開発',
-               progress: 30,
-               status: '学習中'
+               description: 'AIを使い、プロセスを最適化させた開発方法を考案中（Figma×Cursorなどにも関心がある）',
+               progress: 45,
+               status: '試験的運用中'
           },
      ];
 
@@ -65,10 +65,10 @@ export default function Learning() {
                category: 'DevOps'
           },
           {
-               name: 'C++ ゲーム開発',
+               name: 'Swift',
                icon: SiCplusplus,
-               description: 'パフォーマンス重視のゲーム開発',
-               category: 'Game Dev'
+               description: 'モバイルアプリの開発',
+               category: 'DevOps'
           },
           {
                name: 'デザインシステム',
