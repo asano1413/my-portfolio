@@ -1,7 +1,8 @@
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import Image from 'next/image';
 import { FaGithub, FaExternalLinkAlt, FaReact, FaLaravel, FaCode, FaEnvelope } from 'react-icons/fa';
-import { SiNextdotjs, SiTypescript, SiMariadb } from 'react-icons/si';
+import { SiNextdotjs, SiTypescript, SiMariadb, SiFlutter } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
 export default function MyProject() {
@@ -91,6 +92,11 @@ export default function MyProject() {
                     'カテゴリ分類(実装予定)',
                     'リアルタイム通知(実装予定)'
                ],
+               technologies: [
+                    { name: 'Flutter', icon: SiFlutter, color: 'text-blue-500' },
+                    { name: 'Dart', icon: FaCode, color: 'text-blue-600' },
+                    { name: 'Firebase', icon: FaCode, color: 'text-orange-500' }
+               ],
                github: 'https://github.com/asano1413/todoapp',
                demo: '#',
                image: '/my_image3.jpg',
@@ -160,9 +166,11 @@ export default function MyProject() {
                                         {/* Project Image */}
                                         <div className="relative overflow-hidden">
                                              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 group-hover:scale-110 transition-transform duration-500"></div>
-                                             <img
+                                             <Image
                                                   src={project.image}
                                                   alt={project.title}
+                                                  width={400}
+                                                  height={256}
                                                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                                              />
                                              <div className="absolute top-4 right-4">
