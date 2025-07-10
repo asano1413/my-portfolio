@@ -8,16 +8,19 @@ import { motion } from 'framer-motion';
 export default function Home() {
   const skills = [
     { name: 'HTML/CSS', level: 90, color: 'from-orange-400 to-red-500' },
-    { name: 'JavaScript', level: 85, color: 'from-yellow-400 to-orange-500' },
-    { name: 'TypeScript', level: 80, color: 'from-blue-400 to-blue-600' },
-    { name: 'React', level: 85, color: 'from-cyan-400 to-blue-500' },
-    { name: 'Next.js', level: 80, color: 'from-gray-700 to-black' },
-    { name: 'Python', level: 75, color: 'from-blue-500 to-yellow-500' },
-    { name: 'Django', level: 70, color: 'from-green-600 to-green-800' },
-    { name: 'PHP', level: 65, color: 'from-purple-500 to-blue-600' },
-    { name: 'Laravel', level: 70, color: 'from-red-500 to-red-700' },
-    { name: 'Java', level: 60, color: 'from-orange-500 to-red-600' },
-    { name: 'MariaDB', level: 70, color: 'from-blue-600 to-blue-800' },
+    { name: 'JavaScript', level: 65, color: 'from-yellow-400 to-orange-500' },
+    { name: 'TypeScript', level: 60, color: 'from-blue-400 to-blue-600' },
+    { name: 'React', level: 45, color: 'from-cyan-400 to-blue-500' },
+    { name: 'Next.js', level: 70, color: 'from-gray-700 to-black' },
+    { name: 'Python', level: 80, color: 'from-blue-500 to-yellow-500' },
+    { name: 'Django', level: 65, color: 'from-green-600 to-green-800' },
+    { name: 'PHP', level: 50, color: 'from-purple-500 to-blue-600' },
+    { name: 'Laravel', level: 60, color: 'from-red-500 to-red-700' },
+    { name: 'Java', level: 35, color: 'from-orange-500 to-red-600' },
+    { name: 'MariaDB', level: 50, color: 'from-blue-600 to-blue-800' },
+    { name: 'Flutter', level: 40, color: 'from-blue-500 to-yellow-500' },
+    { name: 'Dart', level: 30, color: 'from-green-600 to-green-800' },
+    { name: 'supabase', level: 60, color: 'from-red-500 to-red-700' },
   ];
 
   const career = [
