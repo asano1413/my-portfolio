@@ -42,6 +42,7 @@ export default function Header() {
                               <Link
                                    key={item.name}
                                    href={item.href}
+                                   prefetch={true}
                                    className="relative text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-200 font-medium"
                               >
                                    <span className="hover-underline">{item.name}</span>
