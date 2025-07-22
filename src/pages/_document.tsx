@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="ja">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="浅野晃一朗のポートフォリオサイト。Web開発者として、ユーザー体験を重視したアプリケーションの開発に情熱を注いでいます。" />
         <meta name="keywords" content="浅野晃一朗,Koichiro Asano,Web開発,フロントエンド,バックエンド,React,Next.js,TypeScript,Python,Django" />
         <meta name="author" content="浅野晃一朗" />
         
