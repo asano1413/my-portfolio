@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import Image from 'next/image';
@@ -39,7 +40,15 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-200">
+    <>
+      <Head>
+        <title>浅野晃一朗 | Web開発者ポートフォリオ</title>
+        <meta name="description" content="Web開発者浅野晃一朗のポートフォリオサイト。React、Next.js、Python、Djangoを使用したプロジェクトをご紹介します。" />
+        <meta property="og:title" content="浅野晃一朗 | Web開発者ポートフォリオ" />
+        <meta property="og:description" content="Web開発者浅野晃一朗のポートフォリオサイト。React、Next.js、Python、Djangoを使用したプロジェクトをご紹介します。" />
+        <meta property="og:url" content="https://asano1413.github.io/my-portfolio" />
+      </Head>
+      <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-200">
       <Header />
 
       <main className="flex-grow mt-24 flex flex-col items-center px-6 text-center relative">
@@ -211,6 +220,7 @@ export default function Home() {
       </main>
 
       <Footer />
-    </div>
+      </div>
+    </>
   );
 }

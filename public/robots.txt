@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asano1413.github.io/my-portfolio/sitemap.xml

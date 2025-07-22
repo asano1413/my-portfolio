@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import Image from 'next/image';
@@ -126,7 +127,15 @@ export default function MyProject() {
      };
 
      return (
-          <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-200">
+          <>
+               <Head>
+                    <title>My Projects | 浅野晃一朗</title>
+                    <meta name="description" content="これまでに開発したプロジェクトをご紹介します。React、Next.js、Laravel、Flutterを使用した実践的なプロジェクト。" />
+                    <meta property="og:title" content="My Projects | 浅野晃一朗" />
+                    <meta property="og:description" content="これまでに開発したプロジェクトをご紹介します。React、Next.js、Laravel、Flutterを使用した実践的なプロジェクト。" />
+                    <meta property="og:url" content="https://asano1413.github.io/my-portfolio/myproject" />
+               </Head>
+               <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-200">
                <Header />
 
                <main className="flex-grow mt-24 px-6 max-w-6xl mx-auto">
@@ -286,6 +295,7 @@ export default function MyProject() {
                </main>
 
                <Footer />
-          </div>
+               </div>
+          </>
      );
 }
