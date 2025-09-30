@@ -6,11 +6,11 @@ import { SiNextdotjs, SiPython, SiDocker, SiGithubactions, SiCplusplus, SiFlutte
 
 export default function Learning() {
      const learnedSkills = [
-          { name: 'HTML / CSS', icon: FaCode, description: 'Webページの構造とスタイリング', level: '上級' },
-          { name: 'JavaScript / TypeScript', icon: FaCode, description: 'フロントエンド開発の基盤', level: '上級' },
-          { name: 'React / Next.js', icon: SiNextdotjs, description: 'モダンなフロントエンドフレームワーク', level: '中級' },
-          { name: 'Python / Django', icon: SiPython, description: 'バックエンド開発とWebフレームワーク', level: '中級' },
-          { name: 'Laravel', icon: FaCode, description: 'バックエンド中心のプログラミング', level: '中級' },
+          { name: 'HTML / CSS', icon: FaCode, description: 'Webページの構造とスタイリング', level: '中級' },
+          { name: 'JavaScript / TypeScript', icon: FaCode, description: 'フロントエンド開発の基盤', level: '初級' },
+          { name: 'React / Next.js', icon: SiNextdotjs, description: 'モダンなフロントエンドフレームワーク', level: '初級' },
+          { name: 'Python / Django', icon: SiPython, description: 'バックエンド開発とWebフレームワーク', level: '初級' },
+          { name: 'Laravel', icon: FaCode, description: 'バックエンド中心のプログラミング', level: '初級' },
           { name: 'Flutter', icon: SiFlutter, description: 'マルチプラットフォームアプリの開発', level: '初級' },
      ];
 
@@ -19,28 +19,28 @@ export default function Learning() {
                name: 'NextAuth.js 認証システム',
                icon: FaShieldAlt,
                description: 'セキュアなユーザー認証の実装',
-               progress: 70,
-               status: '実装完了、アップデート後の容易に実装できるようになったものも触れるのが楽しみ'
+               progress: 40,
+               status: '基礎学習中、簡単な認証機能の実装を練習中'
           },
           {
                name: 'Flutter',
                icon: FaMobile,
                description: 'マルチプラットフォームアプリの開発',
-               progress: 65,
+               progress: 35,
                status: '学習・アプリ作成中'
           },
           {
                name: 'FastAPI',
                icon: FaCode,
                description: 'AIを用いたAPIの作成',
-               progress: 45,
+               progress: 25,
                status: '学習中'
           },
           {
                name: 'LangChainを用いた開発',
                icon: FaCode,
                description: 'AIを使い、プロセスを最適化させた開発方法を考案中（Figma×Cursorなどにも関心がある）',
-               progress: 45,
+               progress: 20,
                status: '試験的運用中'
           },
      ];
@@ -100,14 +100,14 @@ export default function Learning() {
      };
 
      return (
-          <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-200">
+          <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-slate-50 to-gray-100 text-gray-800">
                <Header />
 
                <main className="flex-grow mt-24 px-6 max-w-6xl mx-auto relative">
                     {/* Background decoration */}
                     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
-                         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-pink-400/20 to-orange-400/20 rounded-full blur-3xl"></div>
+                         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-slate-200/10 to-gray-200/10 rounded-full blur-3xl"></div>
+                         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-gray-200/10 to-slate-200/10 rounded-full blur-3xl"></div>
                     </div>
 
                     <motion.div
@@ -116,10 +116,10 @@ export default function Learning() {
                          transition={{ duration: 0.8 }}
                          className="text-center mb-16 relative z-10"
                     >
-                         <h1 className="text-5xl font-bold bg-gradient-to-r from-gray-800 via-blue-600 to-purple-600 dark:from-white dark:via-blue-400 dark:to-purple-400 bg-clip-text text-transparent mb-4">
+                         <h1 className="text-5xl font-bold bg-gradient-to-r from-gray-800 via-slate-600 to-gray-700 bg-clip-text text-transparent mb-4">
                               Learning Journey
                          </h1>
-                         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                               技術の習得は終わりのない旅です。これまでに学んだこと、現在学習中のこと、そしてこれから学びたいことをご紹介します。
                          </p>
                     </motion.div>
@@ -132,8 +132,8 @@ export default function Learning() {
                          className="mb-16 relative z-10"
                     >
                          <div className="flex items-center gap-3 mb-8">
-                              <FaGraduationCap className="text-3xl text-green-500" />
-                              <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-green-600 dark:from-white dark:to-green-400 bg-clip-text text-transparent">
+                              <FaGraduationCap className="text-3xl text-slate-600" />
+                              <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-slate-600 bg-clip-text text-transparent">
                                    習得済みスキル
                               </h2>
                          </div>
@@ -147,26 +147,26 @@ export default function Learning() {
                                    <motion.div
                                         key={skill.name}
                                         variants={itemVariants}
-                                        className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 group"
+                                        className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 group"
                                    >
                                         <div className="flex items-center gap-4 mb-4">
-                                             <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                             <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                                   <skill.icon className="text-white text-xl" />
                                              </div>
                                              <div>
-                                                  <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                                  <h3 className="text-lg font-semibold text-gray-800">
                                                        {skill.name}
                                                   </h3>
-                                                  <span className="text-sm text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30 px-2 py-1 rounded-full">
+                                                  <span className="text-sm text-slate-600 bg-slate-100 px-2 py-1 rounded-full">
                                                        {skill.level}
                                                   </span>
                                              </div>
                                         </div>
-                                        <p className="text-gray-600 dark:text-gray-400 text-sm">
+                                        <p className="text-gray-600 text-sm">
                                              {skill.description}
                                         </p>
                                         <div className="mt-4 flex justify-end">
-                                             <FaCheckCircle className="text-green-500 text-xl" />
+                                             <FaCheckCircle className="text-slate-500 text-xl" />
                                         </div>
                                    </motion.div>
                               ))}
@@ -181,8 +181,8 @@ export default function Learning() {
                          className="mb-16 relative z-10"
                     >
                          <div className="flex items-center gap-3 mb-8">
-                              <FaSpinner className="text-3xl text-blue-500 animate-spin" />
-                              <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-blue-600 dark:from-white dark:to-blue-400 bg-clip-text text-transparent">
+                              <FaSpinner className="text-3xl text-slate-600 animate-spin" />
+                              <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-slate-600 bg-clip-text text-transparent">
                                    現在学習中
                               </h2>
                          </div>
@@ -196,32 +196,32 @@ export default function Learning() {
                                    <motion.div
                                         key={skill.name}
                                         variants={itemVariants}
-                                        className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
+                                        className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
                                    >
                                         <div className="flex items-center gap-4 mb-4">
-                                             <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                                             <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center">
                                                   <skill.icon className="text-white text-xl" />
                                              </div>
                                              <div className="flex-1">
-                                                  <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                                  <h3 className="text-lg font-semibold text-gray-800">
                                                        {skill.name}
                                                   </h3>
-                                                  <span className="text-sm text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 px-2 py-1 rounded-full">
+                                                  <span className="text-sm text-slate-600 bg-slate-100 px-2 py-1 rounded-full">
                                                        {skill.status}
                                                   </span>
                                              </div>
                                         </div>
-                                        <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                                        <p className="text-gray-600 text-sm mb-4">
                                              {skill.description}
                                         </p>
                                         <div className="mb-2">
-                                             <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400 mb-1">
+                                             <div className="flex justify-between text-sm text-gray-600 mb-1">
                                                   <span>進捗</span>
                                                   <span>{skill.progress}%</span>
                                              </div>
-                                             <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                                             <div className="w-full bg-gray-200 rounded-full h-2">
                                                   <div
-                                                       className="h-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-1000 ease-out"
+                                                       className="h-2 bg-gradient-to-r from-slate-400 to-gray-500 rounded-full transition-all duration-1000 ease-out"
                                                        style={{ width: `${skill.progress}%` }}
                                                   ></div>
                                              </div>
@@ -239,8 +239,8 @@ export default function Learning() {
                          className="relative z-10"
                     >
                          <div className="flex items-center gap-3 mb-8">
-                              <FaLightbulb className="text-3xl text-yellow-500" />
-                              <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-yellow-600 dark:from-white dark:to-yellow-400 bg-clip-text text-transparent">
+                              <FaLightbulb className="text-3xl text-slate-600" />
+                              <h2 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-slate-600 bg-clip-text text-transparent">
                                    これから学びたいこと
                               </h2>
                          </div>
@@ -254,26 +254,26 @@ export default function Learning() {
                                    <motion.div
                                         key={skill.name}
                                         variants={itemVariants}
-                                        className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 group"
+                                        className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 group"
                                    >
                                         <div className="flex items-center gap-4 mb-4">
-                                             <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                             <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                                   <skill.icon className="text-white text-xl" />
                                              </div>
                                              <div>
-                                                  <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                                  <h3 className="text-lg font-semibold text-gray-800">
                                                        {skill.name}
                                                   </h3>
-                                                  <span className="text-sm text-yellow-600 dark:text-yellow-400 bg-yellow-100 dark:bg-yellow-900/30 px-2 py-1 rounded-full">
+                                                  <span className="text-sm text-slate-600 bg-slate-100 px-2 py-1 rounded-full">
                                                        {skill.category}
                                                   </span>
                                              </div>
                                         </div>
-                                        <p className="text-gray-600 dark:text-gray-400 text-sm">
+                                        <p className="text-gray-600 text-sm">
                                              {skill.description}
                                         </p>
                                         <div className="mt-4 flex justify-end">
-                                             <FaRocket className="text-yellow-500 text-xl" />
+                                             <FaRocket className="text-slate-500 text-xl" />
                                         </div>
                                    </motion.div>
                               ))}
@@ -287,16 +287,16 @@ export default function Learning() {
                          transition={{ duration: 0.8, delay: 0.8 }}
                          className="text-center mt-16 relative z-10"
                     >
-                         <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-700">
-                              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+                         <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-200">
+                              <h3 className="text-2xl font-bold text-gray-800 mb-4">
                                    一緒に学びませんか？
                               </h3>
-                              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                              <p className="text-gray-600 mb-6">
                                    新しい技術の習得やプロジェクトについて、お気軽にご相談ください。
                               </p>
                               <a
                                    href="mailto:mit2471509@stu.o-hara.ac.jp"
-                                   className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold"
+                                   className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-slate-600 to-gray-700 hover:from-slate-700 hover:to-gray-800 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 font-semibold"
                               >
                                    <FaCode />
                                    お問い合わせ

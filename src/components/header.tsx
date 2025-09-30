@@ -25,10 +25,10 @@ export default function Header() {
      };
 
      return (
-          <header className="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-sm border-b border-gray-200 dark:border-gray-700">
+          <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm border-b border-gray-200">
                <div className="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
-                    <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
-                         <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition duration-200">
+                    <h1 className="text-2xl font-bold text-gray-800">
+                         <Link href="/" className="hover:text-slate-600 transition duration-200">
                               Koichiro Asano
                          </Link>
                     </h1>
@@ -42,7 +42,7 @@ export default function Header() {
                               <Link
                                    key={item.name}
                                    href={item.href}
-                                   className="relative text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition duration-200 font-medium"
+                                   className="relative text-gray-700 hover:text-slate-600 transition duration-200 font-medium"
                               >
                                    <span className="hover-underline">{item.name}</span>
                               </Link>
@@ -50,7 +50,7 @@ export default function Header() {
 
                          <button
                               onClick={toggleTheme}
-                              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition duration-200"
+                              className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition duration-200"
                               aria-label="Toggle theme"
                          >
                               {isDark ? <FaSun className="text-yellow-500" /> : <FaMoon className="text-gray-600" />}
@@ -66,7 +66,7 @@ export default function Header() {
           height: 2px;
           bottom: -4px;
           left: 0;
-          background-color: #2563eb;
+          background-color: #475569;
           transition: width 0.3s ease-in-out;
         }
 
